@@ -109,3 +109,6 @@ class Clones:
                     db.update_row(conn, self.update_sql, (n_unique, n_count, self.download_dt, self.repository, date_time))
 
             conn.commit()
+
+        if conn:
+            conn.close()
