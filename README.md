@@ -12,4 +12,21 @@ from github_analytics import BuildDatabase
 BuildDatabase("<path to your desired new database with a .db extension>")
 ```
 
-## 
+## Mine and archive clone related insights data from GitHub for a repository
+
+```python
+from github_analytics import Clones
+
+organization = 'JGCRI'
+repository = 'gcam-core'
+token = '<your token here>'
+uname = '<your user name here>'
+target_db = '<your SQLite3 database here>'
+
+# instantiate Clones
+clones = Clones(organization, repository, uname, token, target_db)
+
+# archive data
+clones.archive()
+```
+
