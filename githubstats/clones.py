@@ -1,8 +1,8 @@
 import os
 import requests
 
-import github_analytics.utils as u
-import github_analytics.database as db
+import githubstats.utils as u
+import githubstats.database as db
 
 
 class Clones:

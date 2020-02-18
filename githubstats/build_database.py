@@ -1,4 +1,4 @@
-import github_analytics.database as db
+import githubstats.database as db
 
 
 class BuildDatabase:
