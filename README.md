@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/JGCRI/githubstats.svg?branch=master)](https://travis-ci.org/JGCRI/githubstats)
+
 # githubstats
 Mine and archive GitHub repositories for insight analytics
 
