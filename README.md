@@ -67,3 +67,15 @@ batch = Batch(organization, username, token, target_db)
 # update all tables in the target database for all repositories in an organization
 batch.update_for_all_repos()
 ```
+
+## Generate a CSV file for the number of unique clones for each repository in the target database
+
+```python
+from githubstats import Reports
+
+# instantiate reports class
+rpt = Reports("<full path with file name and extension to your SQLite3 database>")
+
+# generate a CSV file containing the number of unique clones for each repository in the database
+df = rpt.unique_clones_by_repository('clones', output_csv="<full path with file name and extension to your output CSV file>")
+```
