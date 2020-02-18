@@ -33,3 +33,64 @@ class TestUtils(unittest.TestCase):
 
         # ensure converted time is as expected
         self.assertEqual(out_time, expected_output)
+
+    def test_get_download_datetime(self):
+        """Tests for get_download_datetime function."""
+
+        dt = u.get_download_datetime().split(' ')
+        dte = dt[0].split('-')
+        tm = dt[1].split(':')
+
+        # check year length
+        self.assertEqual(len(dte[0]), 4)
+
+        int_yr = int(dte[0])
+
+        # check year range
+        self.assertLessEqual(int_yr, 2999)
+        self.assertGreaterEqual(int_yr, 2020)
+
+        # check month length
+        self.assertEqual(len(dte[1]), 2)
+
+        int_mth = int(dte[1])
+
+        # check month range
+        self.assertLessEqual(int_mth, 12)
+        self.assertGreaterEqual(int_mth, 1)
+
+        # check day length
+        self.assertEqual(len(dte[2]), 2)
+
+        int_dy = int(dte[2])
+
+        # check day range
+        self.assertLessEqual(int_dy, 31)
+        self.assertGreaterEqual(int_dy, 1)
+
+        # check hour length
+        self.assertEqual(len(tm[0]), 2)
+
+        int_hr = int(tm[0])
+
+        # check hour range
+        self.assertLessEqual(int_hr, 24)
+        self.assertGreaterEqual(int_hr, 1)
+
+        # check minute length
+        self.assertEqual(len(tm[1]), 2)
+
+        int_mn = int(tm[1])
+
+        # check minute range
+        self.assertLessEqual(int_mn, 60)
+        self.assertGreaterEqual(int_mn, 1)
+
+        # check second length
+        self.assertEqual(len(tm[2]), 2)
+
+        int_sec = int(tm[2])
+
+        # check second range
+        self.assertLessEqual(int_sec, 60)
+        self.assertGreaterEqual(int_sec, 1)
