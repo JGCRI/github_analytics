@@ -1,5 +1,9 @@
 from setuptools import setup
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
+
 setup(
     name='githubstats',
     version='v0.1.0',
@@ -8,5 +12,6 @@ setup(
     license='BSD 2-Clause Simplified',
     author='Chris R. Vernon',
     author_email='chris.vernon@pnnl.gov',
-    description='Mine and archive GitHub repositories for insight analytics', install_requires=['requests']
+    description='Mine and archive GitHub repositories for insight analytics',
+    install_requires=requirements
 )
