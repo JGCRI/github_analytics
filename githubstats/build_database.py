@@ -19,6 +19,9 @@ class BuildDatabase:
         # build clones table
         self.create_clones_table()
 
+        # build views table
+        self.create_views_table()
+
         self.conn.close()
 
     def create_table(self, sql):
