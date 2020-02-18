@@ -30,3 +30,21 @@ clones = Clones(organization, repository, uname, token, target_db)
 clones.archive()
 ```
 
+## Mine and archive view related insights data from GitHub for a repository
+
+```python
+from githubstats import Views
+
+organization = 'JGCRI'
+repository = 'gcam-core'
+token = '<your token here>'
+uname = '<your user name here>'
+target_db = '<your SQLite3 database here>'
+
+# instantiate Views
+views = Views(organization, repository, uname, token, target_db)
+
+# archive data
+views.archive()
+```
+
