@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/JGCRI/githubstats.svg?branch=master)](https://travis-ci.org/JGCRI/githubstats)
+[![Coverage Status](https://coveralls.io/repos/github/JGCRI/githubstats/badge.svg?branch=master)](https://coveralls.io/github/JGCRI/githubstats?branch=master)
 
 # githubstats
 Mine and archive GitHub repositories for insight analytics
