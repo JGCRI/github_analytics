@@ -42,3 +42,15 @@ class BuildDatabase:
                     repo_name TEXT NOT NULL);"""
 
         self.create_table(sql)
+
+    def create_views_table(self):
+        """Create table for views data information."""
+
+        sql = """CREATE TABLE views(
+                    date_time TEXT NOT NULL,
+                    uniques INT NOT NULL,
+                    totals INT NOT NULL,
+                    download_dt TEXT NOT NULL,
+                    repo_name TEXT NOT NULL);"""
+
+        self.create_table(sql)
