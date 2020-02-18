@@ -8,5 +8,5 @@ setup(
     license='BSD 2-Clause Simplified',
     author='Chris R. Vernon',
     author_email='chris.vernon@pnnl.gov',
-    description='Mine and archive GitHub repositories for insight analytics'
+    description='Mine and archive GitHub repositories for insight analytics', install_requires=['requests']
 )
