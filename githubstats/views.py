@@ -16,6 +16,8 @@ class Views:
 
     USAGE:
     ```
+    from githubstats import Views
+
     organization = 'JGCRI'
     repository = 'gcam-core'
     token = '<your token here>'

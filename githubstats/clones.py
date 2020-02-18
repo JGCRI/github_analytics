@@ -16,6 +16,8 @@ class Clones:
 
     USAGE:
     ```
+    from githubstats import Clones
+
     organization = 'JGCRI'
     repository = 'gcam-core'
     token = '<your token here>'
