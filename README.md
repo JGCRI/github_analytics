@@ -58,7 +58,7 @@ token = '<your token here>'
 username = '<your user name here>'
 target_db = '<your SQLite3 database here>'
 
-# instantiate Clones
+# instantiate Batch
 batch = Batch(organization, username, token, target_db)
 
 # update all tables in the target database for all repositories in an organization
