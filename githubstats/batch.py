@@ -13,9 +13,11 @@ class Batch:
 
     USAGE:
     ```
+    from githubstats import Batch
+
     organization = 'JGCRI'
     token = '<your token here>'
-    uname = '<your user name here>'
+    username = '<your user name here>'
     target_db = '<your SQLite3 database here>'
 
     # instantiate Clones

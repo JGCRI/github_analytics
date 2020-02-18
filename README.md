@@ -48,3 +48,19 @@ views = Views(organization, repository, uname, token, target_db)
 views.archive()
 ```
 
+## Update data for all repositories in an organization
+
+```python
+from githubstats import Batch
+
+organization = 'JGCRI'
+token = '<your token here>'
+username = '<your user name here>'
+target_db = '<your SQLite3 database here>'
+
+# instantiate Clones
+batch = Batch(organization, username, token, target_db)
+
+# update all tables in the target database for all repositories in an organization
+batch.update_for_all_repos()
+```
