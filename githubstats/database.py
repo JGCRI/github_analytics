@@ -1,6 +1,8 @@
 import sqlite3
 from sqlite3 import Error
 
+import pandas as pd
+
 
 def create_connection(db_file):
     """Create a database connection to the SQLite database specified by db_file
@@ -48,3 +50,15 @@ def update_row(conn, sql, data_tuple):
     cur = conn.cursor()
     cur.execute(sql, data_tuple)
     conn.commit()
+
+
+def query_to_dataframe(conn, sql):
+    """Return the query from the database using an input SQL statement.
+
+    :param conn:            Database connection object
+    :param sql:             SQL string containing statement
+
+    :return:                Pandas DataFrame
+
+    """
+    return pd.read_sql_query(sql, conn)
