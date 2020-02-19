@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/JGCRI/githubstats.svg?branch=master)](https://travis-ci.org/JGCRI/githubstats)
+[![codecov](https://codecov.io/gh/JGCRI/githubstats/branch/master/graph/badge.svg)](https://codecov.io/gh/JGCRI/githubstats)
 
 # githubstats
 Mine and archive GitHub repositories for insight analytics
