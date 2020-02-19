@@ -10,12 +10,11 @@ matrix:
       install:
         - python --version
         - pip install -U pip
-        - pip install coveralls
+        - pip install codecov
         - pip install -r requirements.txt
-        #- python setup.py -q install
-        - coverage run --source cookiecutter setup.py test
+        - python setup.py -q install
       script: travis_wait 35 python3 -m unittest discover
 sudo: false
 cache: pip
 after_success:
-  - coveralls
+  - codecov
